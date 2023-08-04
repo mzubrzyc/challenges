@@ -2,7 +2,7 @@ package fixture;
 
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
-import kata.config.LoggerConfig;
+import challenge.config.LoggerConfig;
 
 public class LogExtension implements BeforeAllCallback {
 

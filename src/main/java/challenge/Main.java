@@ -1,4 +1,4 @@
-package kata;
+package challenge;
 
 public class Main {
 

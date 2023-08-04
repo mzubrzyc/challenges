@@ -1,4 +1,4 @@
-package kata.util;
+package challenge.util;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;

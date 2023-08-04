@@ -1,4 +1,4 @@
-package kata.solutions;
+package challenge.codewars;
 
 import lombok.experimental.UtilityClass;
 
@@ -6,38 +6,10 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 @UtilityClass
-public class Kata {
+public class HowGreenIsMyValley {
 
     /**
-     * The method should add the values of the arrays to one new array.
-     * The arrays in the array will all have the same size and this size will always be greater than 0.
-     * The shifting value is always a value from 0 up to the size of the arrays.
-     * There are always arrays in the array, so you do not need to check for null or empty.
-     *
-     * @param arrayOfArrays An array of arrays with int-numbers
-     * @param shift The shifting value
-     * @return array with new values
-     * */
-    public int[] addingShifted(int[][] arrayOfArrays, int shift) {
-        int resultArraySize = calcSizeOfArray(arrayOfArrays[0].length, arrayOfArrays.length, shift);
-        int[] resultArray = new int[resultArraySize];
-        int innerArrayCounter = 0;
-        int resultArrayIndex;
-        for (int[] innerArray : arrayOfArrays) {
-            for (int i = 0; i < innerArray.length; i++) {
-                resultArrayIndex = i + innerArrayCounter * shift;
-                resultArray[resultArrayIndex] = resultArray[resultArrayIndex] + innerArray[i];
-            }
-            innerArrayCounter++;
-        }
-        return resultArray;
-    }
-
-    private int calcSizeOfArray(int arraySize, int numberOfArrays, int shift) {
-        return arraySize + (numberOfArrays - 1) * shift;
-    }
-
-    /**
+     * <a href=https://www.codewars.com/kata/56e3cd1d93c3d940e50006a4>codewars_challenge</a><br>
      * Input : an array of integers.
      * Output : this array, but sorted in such a way that there are two wings:
      * the left wing with numbers decreasing,
@@ -78,5 +50,6 @@ public class Kata {
             arr[leftIndex] = temp;
         }
     }
+
 
 }
